@@ -1,0 +1,19 @@
+.modal{
+    width: 600px;
+    height: 350px;
+    background-color: var(--textColor);
+    position: absolute;
+    top: 130px;
+    left: calc(50% - 300px);
+    transition: 0.3s;
+    border-radius: 10px;
+    border: 3px solid var(--titleW);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mdlActive{
+    top: 130px;
+}

@@ -1,0 +1,35 @@
+.cont{
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.frsCont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 15vh;
+  gap: 15px;
+}
+
+.scnCont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.homeCont{
+  height: 100%;
+  padding-top: 15vh;
+}
+
+@media screen and (max-width: 480px) {
+  .scnCont{
+      height: 100%;
+      padding: 5px;  
+  }
+}

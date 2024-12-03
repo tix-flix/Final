@@ -1,0 +1,35 @@
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bor{
+    width: auto;
+    height: auto;
+    border-top: 10px solid rgb(251,228,7);
+}
+
+.active{
+    font-weight: bolder;
+    font-size: 22px;
+    color: black; 
+    padding: 20px;
+    background-color: rgb(251,228,7); 
+    border-radius: 15px 15px 0px 0px; 
+}
+
+.passive{
+    font-weight: bolder;
+    font-size: 22px;
+    color: black;
+    padding: 20px;
+    background-color: rgb(185, 167, 2); 
+    border-radius: 15px 15px 0px 0px; 
+}

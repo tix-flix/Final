@@ -1,0 +1,9 @@
+.list__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 4px solid rgb(251,228,7);
+    border-radius: 15px;
+    padding-inline: 10px;
+    margin: 10px 100px;
+}

@@ -1,0 +1,58 @@
+.ImageO{
+    transition: transform 0.5s ease;
+    transform-origin: center;
+}
+.ImageO:hover{
+    transform: rotateY(360deg);
+}
+
+.imgElse {
+    animation: spin 4s linear infinite; 
+}
+
+@keyframes spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .ImageO{
+       width: 300px !important; 
+    }
+
+    /* второй конт */
+
+    .scnCont__img{
+        width: 250px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .scnCont__img{
+        width: 300px !important;
+    }
+
+    /* второй конт */
+    
+    .scnCont__img{
+        transition: transform 0.3s ease;
+    }
+    
+    .scnCont__img:hover{
+        transform: scale(1.1) !important;
+    }
+}
+
+/* второй конт */
+
+.scnCont__img{
+    transition: transform 0.3s ease;
+}
+
+.scnCont__img:hover{
+    transform: scale(1.7);
+}

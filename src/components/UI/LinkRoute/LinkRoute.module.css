@@ -1,0 +1,9 @@
+.link{
+    padding: var(--paddingMob);
+    background-color: var(--textColor);
+    color: var(--main);
+    font-size: var(--sm);
+    font-weight: bold;
+    border-radius: 5px;
+    margin-block: 10px;
+}

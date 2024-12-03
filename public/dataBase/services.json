@@ -1,0 +1,75 @@
+
+[
+    {
+      "id": 0,
+      "name": "Детективные услуги",
+      "price": "15,000 сом",
+      "image": "image/img.json/detectiv.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Пультовая охрана",
+      "price": "30,000 сом",
+      "image": "image/img.json/pultovaya.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Бронеавтомобили",
+      "price": "50,000 сом",
+      "image": "image/img.json/broneavto.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Сопровождение и охрана грузов",
+      "price": "20,000 сом",
+      "image": "image/img.json/soprovoj.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Личная охрана с оружием",
+      "price": "40,000 сом",
+      "image": "image/img.json/lichnayaOhrana.png"
+    },
+    {
+      "id": 5,
+      "name": "Кибербезопасность",
+      "price": "25,000 сом",
+      "image": "image/img.json/kybersave.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Охрана объектов",
+      "price": "35,000 сом",
+      "image": "image/img.json/ohranaObektov.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "Видеонаблюдение",
+      "price": "10,000 сом",
+      "image": "image/img.json/videonabludenie.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Консалтинг",
+      "price": "15,000 сом",
+      "image": "image/img.json/konsalting.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Охрана мероприятий",
+      "price": "30,000 сом",
+      "image": "image/img.json/ohranaMeropryyatiy.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Обнаружение подслушивающих устройств",
+      "price": "18,000 сом",
+      "image": "image/img.json/obnaPodUstr.jpeg"
+    },
+    {
+      "id": 11,
+      "name": "Установка GPS на авто",
+      "price": "8,000 сом",
+      "image": "image/img.json/gps.jpg"
+    }
+  ]

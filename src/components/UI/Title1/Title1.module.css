@@ -1,0 +1,17 @@
+.title{
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .mainTi{
+        font-size: var(--fontPlan);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mainTi{
+        font-size: var(--fontMob);
+    }
+}

@@ -1,0 +1,16 @@
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    justify-content: center;
+    align-content: center;
+    gap: 25px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 480px) {
+    
+}
