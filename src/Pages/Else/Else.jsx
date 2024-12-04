@@ -7,7 +7,7 @@ function Else() {
   return (
     <>
     <Bgcont>
-      <ImageOrg className="imgElse" width="250px" link="../../../public/image/shieldLogo.png"/>
+      <ImageOrg className="imgElse" width="250px" link="/image/shieldLogo.png"/>
       <Title1 text="404 NOT FOUND"/>
     </Bgcont>
     </>

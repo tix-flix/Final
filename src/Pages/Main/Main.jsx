@@ -16,24 +16,25 @@ function Main() {
   return (
     <>
     <Bgcont className="frsCont" link="image/dark.jpg">
-      <ImageOrg className="ImageO" width="350px" link="../../../../public/image/shieldLogo.png"/>
+      <ImageOrg className="ImageO" width="350px" link="/image/shieldLogo.png"/>
       <Title1 className="mainTi" text='Частное охранное агентсво "Арес"' color="var(--altcolor)"/>
-      <Buttons onClick={() => btn()} className="btnMob" size="var(--md)" br="20px" text="Заказать Услугу"/>
-      <ModalWin className={active ? "modal" : "mdlActive"}/>
+      <Buttons onClick={() => btn()} className="btnMob" size="var(--md)" br="20px" text="Заказать Услугу" bgcolor="var(--textColor)"/>
+      <ModalWin className={active ? "mdlActive" : ""}/>
     </Bgcont>
     <Bgcont className="scnCont" color="var(--titleW)">
       <Title1 className="mainTi" text="Сертификаты"/>
       <div className={st.cont}>
-      <ImageOrg className="scnCont__img" width="350px" link="../../../public/image/img.sert/1.webp"/>
-      <ImageOrg className="scnCont__img" width="350px" link="../../../public/image/img.sert/2.jpg"/>
-      <ImageOrg className="scnCont__img" width="350px" link="../../../public/image/img.sert/3.jpg"/>
-      <ImageOrg className="scnCont__img" width="350px" link="../../../public/image/img.sert/4.jpg"/>
-      <ImageOrg className="scnCont__img" width="350px" link="../../../public/image/img.sert/5.webp"/>
-      <ImageOrg className="scnCont__img" width="350px" link="../../../public/image/img.sert/6.jpg"/>
+      <ImageOrg className="scnCont__img" width="350px" link="image/img.sert/1.webp"/>
+      <ImageOrg className="scnCont__img" width="350px" link="image/img.sert/2.jpg"/>
+      <ImageOrg className="scnCont__img" width="350px" link="image/img.sert/3.jpg"/>
+      <ImageOrg className="scnCont__img" width="350px" link="image/img.sert/4.jpg"/>
+      <ImageOrg className="scnCont__img" width="350px" link="image/img.sert/5.webp"/>
+      <ImageOrg className="scnCont__img" width="350px" link="image/img.sert/6.jpg"/>
       </div>
     </Bgcont>
-    <Bgcont className="frsCont" link="image/dark.jpg">
-      {/* <Map width="250px" height="250px"/> */}
+    <Bgcont className="trhCont" link="image/dark.jpg">
+    <Title1 className="mainTi" text="Где мы находимся:" color="var(--altcolor)"/>
+      <Map wid="1000px" hei="450px"/>
     </Bgcont>
     </>
   )

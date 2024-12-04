@@ -7,7 +7,7 @@ function Home() {
   const [info, setInfo] = useState([])
 
   useEffect(() => {
-    fetch("dataBase/services.json")
+    fetch("../../../public/dataBase/services.json")
       .then((response) => response.json())
       .then((data) => {
         setInfo(data)
@@ -16,7 +16,7 @@ function Home() {
   },[])
   return (
     <>
-    <Bgcont className="homeCont" link="../../../public/image/black.jpg">
+    <Bgcont className="homeCont" link="image/black.jpg">
       <List arr={info}/>
     </Bgcont>
     </>

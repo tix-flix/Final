@@ -1,34 +1,5 @@
-.cont{
+.slide{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-block: 15px;
-    gap: 15px;
-}
-
-.active{
-    font-weight: bolder;
-    font-size: 25px;
-    color: black; 
-    padding: 5px;
-    background-color: rgb(251,228,7); 
-    border-radius: 10px; 
-}
-
-.passive{
-    font-weight: bolder;
-    font-size: 25px;
-    color: rgb(251,228,7); 
-}
-
-.list{
-    list-style-type: none;
-}
-
-.lit{
-    margin-block: 15px;
-}
-.bor{
-    display: grid;
-    gap: 15px;
+    overflow: hidden;
+    max-width: 100%;
 }

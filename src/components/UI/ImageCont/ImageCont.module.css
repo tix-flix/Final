@@ -2,5 +2,5 @@
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
-    border: 5px solid rgb(251,228,7);
+    border: 5px solid var(--textColor);
 }

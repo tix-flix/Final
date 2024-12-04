@@ -1,3 +1,28 @@
 .cont{
-    margin-block: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cont2{
+    border: 5px solid var(--textColor);
+}
+
+.active{
+    font-weight: bolder;
+    font-size: 22px;
+    color: black; 
+    padding: 20px;
+    background-color: var(--textColor2); 
+    border-radius: 15px 15px 0px 0px; 
+}
+
+.passive{
+    font-weight: bolder;
+    font-size: 22px;
+    color: black;
+    padding: 20px;
+    background-color: var(--textColor); 
+    border-radius: 15px 15px 0px 0px; 
 }

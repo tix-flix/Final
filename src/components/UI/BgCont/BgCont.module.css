@@ -3,22 +3,19 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 15px;
 }
 
 .frsCont{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   padding-top: 15vh;
-  gap: 15px;
+  gap: var(--gap);
 }
 
 .scnCont{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   gap: 30px;
 }
 
@@ -27,9 +24,21 @@
   padding-top: 15vh;
 }
 
+.trhCont{
+  gap: var(--gap);
+}
+
+.about{
+  gap: var(--gap);
+}
+
 @media screen and (max-width: 480px) {
   .scnCont{
       height: 100%;
       padding: 5px;  
+  }
+
+  .about{
+    padding-top: 20%;
   }
 }

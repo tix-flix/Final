@@ -1,3 +1,16 @@
 .title{
     text-align: center;
+    font-family: "aleg";
+}
+
+@media screen and (max-width: 1024px) {
+    .title{
+        font-size: var(--fontPlan) !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title{
+        font-size: var(--fontMob) !important;
+    }
 }

@@ -3,17 +3,37 @@
     height: 350px;
     background-color: var(--textColor);
     position: absolute;
-    top: 130px;
+    top: -1030px;
     left: calc(50% - 300px);
-    transition: 0.3s;
+    transition: 0.4s;
     border-radius: 10px;
     border: 3px solid var(--titleW);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 8px;
+    padding: 10px;
 }
 
 .mdlActive{
     top: 130px;
+}
+
+@media screen and (max-width: 1024px) {
+    .modal{
+        width: 450px;
+        height: 300px;
+        left: calc(50% - 225px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .modal{
+        width: 350px;
+        height: 250px;
+        left: calc(50% - 175px);
+    }
+
+    .bor{display: none;}
 }

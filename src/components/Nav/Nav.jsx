@@ -7,7 +7,7 @@ function Nav() {
   return (
       <div className={st.cont}>
         <div className={st.nav__logo}>
-          <NavLogo add="/" link="../../../public/image/shieldLogo.png" width="50px"/>
+          <NavLogo add="/" link="/image/shieldLogo.png" width="50px"/>
         </div>
         <ul className={st.list}>
           <li className={st.list__link}>

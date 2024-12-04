@@ -1,0 +1,7 @@
+.inTel{
+    width: 80%;
+    height: 12%;
+    border-radius: var(--borderRadius);
+    background-color: var(--main);
+    color: var(--titleW);
+}

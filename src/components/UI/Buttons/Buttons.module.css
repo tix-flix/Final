@@ -1,9 +1,9 @@
 .btn{
     user-select: none;
-    background: linear-gradient(90deg, var(--textColor), var(--altcolor)); 
     padding: var(--padding);
     border-radius: 10px;
-
+    font-family: "aleg";
+    font-weight: bold;
 }
 .btn:hover{
     box-shadow: 1px 2px 1px black;

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "aleg";
+  src: url(../public/fonts/AlegreyaSansSC-Regular.ttf);
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -10,6 +15,7 @@
   --textColor: #C53030;
   --altcolor: #e43131;
   --titleW: white;
+  --textColor2: #f84848;
 
   --fontFamily: sans-serif;
 
@@ -17,8 +23,9 @@
   --padding: 10px 15px;
   --paddingMob: 5px 10px;
 
-  --margin: 10px;
+  --margin: 8px;
   --altMargin: 25px;
+  --gap: 15px;
 
   --sm: 16px;
   --md: 24px;
