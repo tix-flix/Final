@@ -1,22 +1,32 @@
 import React, { useEffect, useState } from 'react'
 import Title1 from '../../components/UI/Title1/Title1';
 import Title2 from '../../components/UI/Title2/Title2';
+import { useParams } from 'react-router-dom';
+import PreLoad from '../../components/UI/PreLoad/PreLoad';
 
 function PageOne() {
-    const [obj, setObj] = useState([])
+    const {myId} = useParams()
+    const [obj, setObj] = useState({})
     useEffect(() => {
-        fetch("../../../public/dataBase/services.json")
+        fetch("/public/dataBase/services.json")
         .then((response) => response.json())
         .then((data) => {
             const item = data.find((e) => e.id == myId);
-        setObj(item);
-        console.log(item)
-        })
+            if (item) setObj(item);
+      })
+      .catch((error) => console.error("Ошибка при загрузке данных:", error));
     },[])
+
   return (
     <>
-    <Title1 text={obj.price.cheap.cost}/>
-    <Title2 text={obj.price.cheap.description}/>
+    {obj.price ? (
+        <>
+          <Title1 color="var(--textColor)" text={`Цена: ${obj.price.cheap.cost}`} />
+          <Title2 color="var(--textColor)" text={obj.price.cheap.description} />
+        </>
+      ) : (
+        <PreLoad/>
+      )}
     </>
   )
 }

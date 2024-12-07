@@ -7,6 +7,22 @@
 
 .cont2{
     border: 5px solid var(--textColor);
+    width: 600px;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box{
+    width: 600px;
+}
+
+.box2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .active{
@@ -25,4 +41,44 @@
     padding: 20px;
     background-color: var(--textColor); 
     border-radius: 15px 15px 0px 0px; 
+}
+
+@media screen and (max-width: 1024px) {
+    .box{
+        width: 400px;
+    }
+
+    .cont2{
+        width: 470px;
+    }
+
+    .active{
+        font-size: 16px;
+        padding: 18px;
+    }
+
+    .passive{
+        font-size: 16px;
+        padding: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .box{
+        width: 300px;
+    }
+
+    .cont2{
+        width: 350px;
+    }
+
+    .active{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .passive{
+        font-size: 14px;
+        padding: 10px;
+    }
 }

@@ -32,6 +32,12 @@
   gap: var(--gap);
 }
 
+.persCont{
+  padding-top: 15vh;
+  gap: var(--gap);
+  height: 150vh;
+}
+
 @media screen and (max-width: 480px) {
   .scnCont{
       height: 100%;

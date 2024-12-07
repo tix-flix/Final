@@ -11,13 +11,13 @@ function Nav() {
         </div>
         <ul className={st.list}>
           <li className={st.list__link}>
-            <NavLinkCustom className={({isActive}) => (isActive ? st.active : st.passive )} add='/' text="MAIN" />
+            <NavLinkCustom className={({isActive}) => (isActive ? st.active : st.passive )} add='/' text="Главная" />
           </li>
           <li className={st.list__link}>
-            <NavLinkCustom className={({isActive}) => (isActive ? st.active : st.passive )} add='/home' text="HOME"/>
+            <NavLinkCustom className={({isActive}) => (isActive ? st.active : st.passive )} add='/home' text="Услуги"/>
           </li>
           <li className={st.list__link}>
-            <NavLinkCustom className={({isActive}) => (isActive ? st.active : st.passive )} add='/about' text="ABOUT"/>
+            <NavLinkCustom className={({isActive}) => (isActive ? st.active : st.passive )} add='/about' text="О Нас"/>
           </li>
         </ul>
       </div>

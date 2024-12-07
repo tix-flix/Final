@@ -7,7 +7,7 @@ function Home() {
   const [info, setInfo] = useState([])
 
   useEffect(() => {
-    fetch("../../../public/dataBase/services.json")
+    fetch("/dataBase/services.json")
       .then((response) => response.json())
       .then((data) => {
         setInfo(data)

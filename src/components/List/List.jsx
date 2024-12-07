@@ -16,7 +16,7 @@ function List({arr}) {
             <div className={st.cont}>
               <Cont wid="300px" hei="350px">
                 <ImageOrg link={e.image} width="250px" br="var(--borderRadius)"/>
-                <Title1 text={e.name} color="var(--textColor)" size="var(--md)"/>
+                <Title1 className="titleLi" text={e.name} color="var(--textColor)" size="var(--md)"/>
                 <LinkRoute text="<<< Подробнее >>>" add={`/home/${e.id}`}/>
               </Cont>
             </div>

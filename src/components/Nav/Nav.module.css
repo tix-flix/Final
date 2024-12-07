@@ -25,9 +25,13 @@
     font-weight: bolder;
     font-size: 25px;
     padding: 10px;
-    background-color: var(--textColor);
     border-radius: var(--borderRadius);
-    color: var(--main); 
+    color: var(--textColor); 
+}
+
+.passive:hover{
+    background-color: var(--textColor);
+    color: var(--main);
 }
 
 .active{

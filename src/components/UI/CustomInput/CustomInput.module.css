@@ -4,4 +4,6 @@
     border-radius: var(--borderRadius);
     background-color: var(--main);
     color: var(--titleW);
+    border: none;
+    text-align: center;
 }

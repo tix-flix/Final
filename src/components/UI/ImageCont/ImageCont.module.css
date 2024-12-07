@@ -4,3 +4,15 @@
     background-repeat: no-repeat;
     border: 5px solid var(--textColor);
 }
+
+@media screen and (max-width: 1024px) {
+    .box{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .box{
+        width: 350px !important;
+    }
+}

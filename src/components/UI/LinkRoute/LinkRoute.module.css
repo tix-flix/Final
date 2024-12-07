@@ -7,3 +7,9 @@
     border-radius: 5px;
     margin-block: 10px;
 }
+
+.link:hover{
+    background-color: var(--main);
+    color: var(--textColor);
+    border: 1px solid var(--textColor);
+}

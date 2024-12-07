@@ -18,8 +18,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Main/>}/>
         <Route path='/home' element={<Home/>}/>
-        <Route path='/home/:myId' element={<Personal/>}/>
-        <Route imdex element={<Navigate to="PageTwo"/>}>
+        <Route path='/home/:myId' element={<Personal/>}>
           <Route path='PageOne' element={<PageOne/>}/>
           <Route path='PageTwo' element={<PageTwo/>}/>
           <Route path='PageThree' element={<PageThree/>}/>

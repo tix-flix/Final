@@ -6,11 +6,11 @@ import ImageCont from '../../components/UI/ImageCont/ImageCont'
 import Title3 from '../../components/UI/Title3/Title3'
 import NavLinkCustom from '../../components/UI/NavLink/NavLinkCustom'
 import st from './Personal.module.css'
-import ImageOrg from '../../components/UI/Image/ImageOrg'
+import LinkRoute from '../../components/UI/LinkRoute/LinkRoute'
 
 function Personal() {
   const {myId} = useParams()
-    const [obj, setObj] = useState([])
+  const [obj, setObj] = useState([])
     useEffect(() => {
         fetch("/dataBase/services.json")
         .then((response) => response.json())
@@ -21,20 +21,26 @@ function Personal() {
     },[])
   return (
     <>
-    <Bgcont className="frsCont" link="image/black.jpg">
-      <ImageOrg link={obj.image}/>
-      <ImageCont link={obj.image} wid="450px" hei="350px" br="15px"/>
-      <Title1 text={obj.name}/>
-      <Title3 text={obj.description}/>
-    </Bgcont>
-      <div className={st.cont}>
-        <NavLinkCustom className={({isActive}) => (isActive ? st.active : st.passive )} add='/Personal/PageOne' text="Низкая цена"/>
-        <NavLinkCustom className={({isActive}) => (isActive ? st.active : st.passive )} add='/Personal/PageTwo' text="Средняя цена"/>
-        <NavLinkCustom className={({isActive}) => (isActive ? st.active : st.passive )} add='/Personal/PageThree' text="Большая цена"/>
+    <Bgcont className="persCont" link="/image/dark2.jpg">
+      <ImageCont link={obj.image} wid="450px" hei="350px" br="10px"/>
+      <Title1 color="var(--textColor)" text={obj.name}/>
+      <div className={st.box}>
+      <Title3 color="var(--textColor)" text={obj.description}/>
       </div>
+    <div className="cont__box">
+      <div className={st.cont}>
+        <NavLinkCustom className={({isActive}) => (isActive ? st.active : st.passive )} add={`/home/${myId}/PageOne`} text="Низкая цена"/>
+        <NavLinkCustom className={({isActive}) => (isActive ? st.active : st.passive )} add={`/home/${myId}/PageTwo`} text="Средняя цена"/>
+        <NavLinkCustom className={({isActive}) => (isActive ? st.active : st.passive )} add={`/home/${myId}/PageThree`} text="Большая цена"/>
+      </div>
+      <div className={st.box2}>
       <div className={st.cont2}>
         <Outlet/>
       </div>
+      </div>
+    </div>
+      <LinkRoute text="<<< Назад >>>" add="/home"/>
+    </Bgcont>
     </>
   )
 }

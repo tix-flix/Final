@@ -1,6 +1,6 @@
 @font-face {
   font-family: "aleg";
-  src: url(../public/fonts/AlegreyaSansSC-Regular.ttf);
+  src: url(/fonts/AlegreyaSansSC-Regular.ttf);
 }
 
 *{

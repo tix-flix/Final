@@ -1,0 +1,10 @@
+.map{
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+    .map{
+        width: 80%;
+        height: 350px;
+    }
+}
